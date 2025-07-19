@@ -7,7 +7,7 @@ from datetime import date, timedelta
 
 # Streamlit 설정
 st.set_page_config(layout="wide", page_title="📈 ETF Chart Dashboard")
-st.title("📊 ETF EMA/RSI Interactive Dashboard")
+st.title("📊 ETF Technical Dashboard")
 
 # 사이드바: ETF 선택
 st.sidebar.header("설정")

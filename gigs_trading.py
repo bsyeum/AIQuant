@@ -56,10 +56,6 @@ if df.empty:
 if isinstance(df.columns, pd.MultiIndex):
     df.columns = df.columns.droplevel(1)
 
-# 데이터 정보 확인 (디버깅용)
-st.write("데이터 구조:", df.columns.tolist())
-st.write("데이터 샘플:", df.head())
-
 # 지표 계산
 df['EMA_70'] = calc_ema(df['Close'], 70)
 df['EMA_210'] = calc_ema(df['Close'], 210)
@@ -336,3 +332,9 @@ if not status_df.empty:
 
 else:
     st.warning("데이터를 가져올 수 없습니다.")
+
+# 데이터 정보 확인 (디버깅용)
+st.write("데이터 구조:", df.columns.tolist())
+st.write("데이터 샘플:", df.head())
+
+

@@ -12,10 +12,9 @@ st.title("📊 ETF Technical Dashboard")
 # 사이드바: ETF 선택
 st.sidebar.header("설정")
 etf_list = [
-    'ACWI','SPY','QQQ','ARKK', 'ARKF', 'CRPT', 'SMH', 'XLF', 'XLK', 'XLE', 'XLV', 'XLI', 'XBI', 'XLU',
-    'XLP', 'XLY', 'KRE', 'XLB', 'XLC', 'XRT', 'XOP', 'XLRE', 'XHB', 'KBE', 'XME',
-    'KIE', 'XSD', 'XAR', 'XES', 'KCE', 'XNTK', 'XHE', 'XSW', 'XPH', 'XTN', 'XHS',
-    'XITK', 'XTL'
+    'ACWI','SPY','QQQ','SMH', 'BBJP', 'EFA', 'IEMG', 'MCHI', 'IWM', 'VGK' ,'XLF', 'XLK', 'XLE', 'XLV', 'XLI', 'XBI', 'XLU',
+    'XLP', 'XLY', 'KRE', 'XLB', 'XLC', 'ARKK', 'ARKF', 'CRPT', 'XRT', 'XOP', 'XLRE', 'XHB', 'KBE', 'XME',
+    'KIE', 'XSD', 'XAR', 'XES'
 ]
 ticker = st.sidebar.selectbox("ETF 선택", etf_list)
 
